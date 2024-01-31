@@ -1,0 +1,27 @@
+{
+	"name": "w7d3",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"dev": "nodemon app.js",
+		"seed:user": "node ./seed/user.seed.js",
+		"seed:discussion": "node ./seed/discussion.seed.js",
+		"seed:message": "node ./seed/message.seed.js",
+		"seed:all": "npm run seed:user && npm run seed:discussion && npm run seed:message"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.4.1",
+		"express": "^4.18.2",
+		"helmet": "^7.1.0",
+		"mongoose": "^8.1.1",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.3"
+	}
+}
